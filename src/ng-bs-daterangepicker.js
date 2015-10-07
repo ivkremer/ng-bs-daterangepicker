@@ -12,6 +12,7 @@
 		.directive('input', ['$compile', '$parse', '$filter', function($compile, $parse, $filter) {
 			return {
 				restrict: 'E',
+				priority: 1,
 				require: '?ngModel',
 				link: function($scope, $element, $attributes, ngModel) {
 
